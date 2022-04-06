@@ -1,0 +1,71 @@
+/* Write your CSS here */
+
+.ds-bg {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.ds-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto';
+  padding: 30px;
+  width: 80%;
+}
+.items-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+}
+.ds-heading {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #000000;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #f1f5f9;
+  padding-left: 20px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.search-icon {
+  height: 20px;
+  width: 20px;
+}
+.ds-input {
+  width: 100%;
+  font-size: 21px;
+  color: #0f172a;
+  background-color: #f1f5f9;
+  border: none;
+  outline: none;
+}
+@media screen and (min-width: 768px) {
+  .ds-container {
+    align-items: flex-start;
+    width: 90%;
+  }
+  .items-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0;
+  }
+  .ds-heading {
+    font-size: 30px;
+    text-align: left;
+  }
+  .ds-input {
+    width: 400px;
+  }
+}
